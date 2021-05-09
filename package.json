@@ -1,12 +1,14 @@
 {
-  "name": "tailwind-auto-applier",
+  "name": "tw-apply-cli",
   "version": "1.0.0",
   "description": "A nodejs cli that generates a tailwind.css with @apply for most reused classStrings",
   "exports": "./src/index.js",
-  "bin": "./bin/index.js",
+  "bin": {
+    "twapply": "./bin/index.js"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/technikhil314/tailwind-auto-applier.git"
+    "url": "https://github.com/technikhil314/tw-apply-cli.git"
   },
   "engines": {
     "node": ">=12.20"
@@ -24,7 +26,9 @@
   "scripts": {
     "prepare": "husky install"
   },
-  "dependencies": {},
+  "dependencies": {
+    "meow": "^10.0.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^12.1.1",
     "@commitlint/config-conventional": "^12.1.1",
