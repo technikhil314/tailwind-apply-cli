@@ -1,0 +1,36 @@
+{
+  "name": "tailwind-auto-applier",
+  "version": "1.0.0",
+  "description": "A nodejs cli that generates a tailwind.css with @apply for most reused classStrings",
+  "exports": "./bin/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/technikhil314/tailwind-auto-applier.git"
+  },
+  "engines": {
+    "node": ">=12.20"
+  },
+  "keywords": [
+    "tailwind",
+    "cli",
+    "tailwind-apply",
+    "css",
+    "web"
+  ],
+  "type": "module",
+  "author": "Nikhil Mehta <nikhil.001mehta@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "eslint": "^7.26.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.2.1"
+  }
+}
