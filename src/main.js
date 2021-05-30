@@ -40,9 +40,10 @@ module.exports = async function main(input, flags) {
       let fileTextContent = fileContent.toString();
       finalSelectors.forEach(async (value, key) => {
         fileTextContent = fileTextContent.replace(
-          new RegExp(`${value.join("|")}`, "gi"),
+          new RegExp(`${value.join("|")}`, "g"),
           key
         );
+        await fsPromises.truncate(absfilePath);
         await fsPromises.writeFile(absfilePath, fileTextContent);
       });
     })
