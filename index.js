@@ -1,3 +1,4 @@
-export default function index(input, flags) {
-  console.log(input, flags);
-}
+const main = require("./src/main");
+module.exports = function index(input, flags) {
+  main(input, flags);
+};

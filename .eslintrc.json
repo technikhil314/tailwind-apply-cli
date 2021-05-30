@@ -10,8 +10,7 @@
     "es6": true
   },
   "parserOptions": {
-    "ecmaVersion": 2020,
-    "sourceType": "module"
+    "ecmaVersion": 2020
   },
   "rules": {
     "no-alert": "error",
@@ -33,6 +32,7 @@
     "globalThis": true
   },
   "ignorePatterns": [
-    "node_modules/"
+    "node_modules/",
+    "examples/"
   ]
 }

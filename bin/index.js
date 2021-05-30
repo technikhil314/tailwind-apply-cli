@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 
-import meow from "meow";
-import tailwindAutoApplier from "../index.js";
+const meow = require("meow");
+const tailwindAutoApplier = require("../index.js");
 
 const cli = meow(
   `
@@ -28,7 +28,6 @@ const cli = meow(
     ----------------------------------------------------------------------------------------
 `,
   {
-    importMeta: import.meta,
     flags: {
       exclude: {
         type: "string",
