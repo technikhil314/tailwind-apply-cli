@@ -41,7 +41,7 @@ module.exports = async function main(input, flags) {
       finalSelectors.forEach(async (value, key) => {
         fileTextContent = fileTextContent.replace(
           new RegExp(`${value.join("|")}`, "g"),
-          key
+          `_${key}`
         );
         await fsPromises.truncate(absfilePath);
         await fsPromises.writeFile(absfilePath, fileTextContent);
