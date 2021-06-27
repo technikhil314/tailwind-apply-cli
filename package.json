@@ -1,6 +1,6 @@
 {
   "name": "tailwind-apply-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A nodejs cli that generates a tailwind.css with @apply for most reused classStrings",
   "main": "./src/index.js",
   "bin": {
