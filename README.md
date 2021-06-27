@@ -22,6 +22,20 @@ This will generate className and tailwind.css for all class strings defined in t
 npx twapply "./**/*.(jsx|html)"
 ```
 
-# Demo
+### Sample input/output
+
+#### Before
+
+[![Before](https://github.com/technikhil314/my-static-assets/raw/master/images/tw-apply-before.png)](https://github.com/technikhil314/my-static-assets/raw/master/images/tw-apply-before.png)
+
+#### After
+
+[![after](https://github.com/technikhil314/my-static-assets/raw/master/images/tw-apply-after.png)](https://github.com/technikhil314/my-static-assets/raw/master/images/tw-apply-after.png)
+
+## Demo
 
 [![demo](https://raw.githubusercontent.com/technikhil314/my-static-assets/master/terminal-casts/tailwind-apply-cli.svg)](https://raw.githubusercontent.com/technikhil314/my-static-assets/master/terminal-casts/tailwind-apply-cli.svg)
+
+## License
+
+[MIT](LICENSE)
